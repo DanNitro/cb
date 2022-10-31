@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo - .skew</title>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../cb-extraclass.css">
+
+
+
+<style>
+*{box-sizing:border-box;}
+body {min-height: 100vh;min-height: -webkit-fill-available;font-size:100%;font-family:-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";background-color:#f1f1f1;color:#555;margin:0 auto;overflow-x:hidden;}
+
+.fcode{border:none;padding:5px;width:100%;height:400px;scroll:auto;background:#f1fdfd;color:#333; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;font-size:17px;outline:none;}.fcode:focus{outline:none;box-shadow:inset 0 0 2px #666, 0 0 1px #000;}
+
+.frender2{min-height:900px;width:100%;background:#ffffff;}
+#aboutmetextarea { display: block; width:100%;margin:15px auto 22px auto; min-height:200px;max-width:100%;min-width:90%;}
+.screensize{background-image:url('../assets/img/screensize.svg');background-size:100% auto;background-position:0 20px;background-repeat:no-repeat;}
+a.branding{font-size:1.2em;color:#FFF;text-decoration:none;text-transform:uppercase;}
+a.branding:hover{font-size:1.2em;color:#F93;text-decoration:none;text-transform:uppercase;}
+.docb{padding:.5em 1.8em .5em;text-align:center;background-color:#036;border-radius:120px 0 120px 0;border-left:10px solid #F93;}
+@media screen and (max-height: 450px) {nav, nav .text-center, nav .text-end {text-align:center}}
+@media only screen and (max-width: 748px) and (min-width: 300px){
+{nav, nav .text-center, nav .text-end {text-align:center}
+  }
+</style>
+</head>
+
+<body>
+
+<nav class="container p-3 mt-0 mb-3 mx-auto bg-white">
+<div class="row">
+<div class="col-md-4"><span class="docb"><a class="branding" href="../cb-extracalss.html">Custom Gem Class [CGC]</a></span></div>
+<div class="col-md-4 text-center"></div>
+<div class="col-md-4 text-end"><a class="btn btn-md btn-primary" href="index.html">Examples</a></div>
+</div>
+</nav>
+<div class="container">
+
+<div class="card">
+<div class="col-md-12 p-3">
+<h3>.lskew- / .rskew- / .noskew</h3>
+<p>These class name add a 3D skew effect using only CSS.</p>
+<p>To test, click the <strong>Preview</strong> button, then use the slider to simulate the smaller/bigger screen sizes.</div>
+</div>
+
+
+
+
+
+
+
+<!-- Editor --->
+<div class="col-md-12">
+ <textarea id="aboutmetextarea" class="fcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">&lt;p&gt;Hover over the blocks. The orange line is the <code>.fnone</code> class holding all the other elements&lt;/p&gt;
+&lt;ul class=&quot;cgcstyle&quot; style=&quot;display:block;width:100%;min-width:20%;height:auto;margin:0 auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;&quot;&gt;&lt;li class=&quot;gr-12 rskew-1&quot; style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;ul class=&quot;frow&quot;  style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;fnone&quot;&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+ 
+ <style>
+/***
+ Custom Gem Class
+ .cgcstyle must be set as the parent / class name assigned to parent element so no conflicts with other css styles
+ Any type of elements added within this class name will become child and inherit/apply
+ the following css
+***/
+
+.cgcstyle{line-height:normal;font-size: 100%;}
+.cgcstyle *{box-sizing:border-box;}
+
+/*** Block Width % expressed in fluid value ***/ 
+.cgcstyle [class*="gr-"] {float: left;padding: 15px;}
+.cgcstyle .gr-1 {width: 8.33%;}
+.cgcstyle .gr-2 {width: 16.66%;}
+.cgcstyle .gr-3 {width: 25%;}
+.cgcstyle .gr-4 {width: 33.33%;}
+.cgcstyle .gr-5 {width: 41.66%;}
+.cgcstyle .gr-6 {width: 50%;}
+.cgcstyle .gr-7 {width: 58.33%;}
+.cgcstyle .gr-8 {width: 66.66%;}
+.cgcstyle .gr-9 {width: 75%;}
+.cgcstyle .gr-10 {width: 83.33%;}
+.cgcstyle .gr-11 {width: 91.66%;}
+.cgcstyle .gr-12 {width: 100%;}
+/*** Float ***/
+.cgcstyle .fleft{float:left;}
+.cgcstyle .fright{float:right;}
+.cgcstyle .fnone{float:none;clear:both;}
+
+/*** Block Transform skew CSS ***/ 
+/*** Block Transform skew CSS ***/ 
+.cgcstyle .lskew-1{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-100px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-2{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-200px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-3{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-300px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-4{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-400px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+
+.cgcstyle .rskew-1{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(100px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-2{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(200px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-3{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(300px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-4{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(400px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .noskew{transform:none;}
+
+
+/*** Block Box Shadow ***/
+.cgcstyle .boxsh-sm{box-shadow:0 1px 2px rgba(0,0,0,0.50);}
+.cgcstyle .boxsh-md{box-shadow:0 3px 7px rgba(0,0,0,0.50);}
+.cgcstyle .boxsh-xl{box-shadow:0 1px 14px rgba(0,0,0,0.70);}
+.cgcstyle .boxsh-xll{box-shadow:0 0 22px rgba(0,0,0,0.70);}
+.cgcstyle .nosh{box-shadow:0 0 0 rgba(0,0,0,0.0);}
+
+
+/*** Hover Block elements : Opacity ***/
+.cgcstyle .hopa-3{opacity:.5;}
+.cgcstyle .hopa-3:hover{opacity:1;}
+.cgcstyle .hopa-5{opacity:.7;}
+.cgcstyle .hopa-5:hover{opacity:1;}
+.cgcstyle .nohopa{opacity:1;}
+/*** Hover URL/Link Dark background***/
+.cgcstyle a.urdark:link,.cgcstyle a.urdark:visited {color: #777;}
+.cgcstyle a.urdark:hover,.cgcstyle a.urdark:active,.cgcstyle a.urdark:focus {color:#F36;}
+/*** Hover URL/Link Light background***/
+.cgcstyle a.urlight:link,.cgcstyle a.urlight:visited {color: #09C;}
+.cgcstyle a.urlight:hover,.cgcstyle a.urlight:active,.cgcstyle a.urlight:focus {color:#F60;}
+/*** Image Responsive ***/
+.cgcstyle img.responsive,.cgcstyle .responsive img{width:100%;height:auto;}
+/*** Font Size - Typography ***/
+.cgcstyle h1.heading-1,.cgcstyle .heading-1 h1{font-size: 2.5em;line-height:normal;}
+.cgcstyle h2.heading-2,.cgcstyle .heading-2 h2{font-size: 1.875em;line-height:normal;}
+.cgcstyle p.para,.cgcstyle .para p{font-size: 0.875em;line-height:normal;}
+/*** Scrollbar ***/
+.xcr::-webkit-scrollbar {width: 8px; height:8px;background-color:#69BDDB;}
+	/* Track */
+.xcr::-webkit-scrollbar-track {background: #fff;box-shadow:inset 0 0 3px rgba(0,0,0,0.3); }
+ /* Handle */
+.xcr::-webkit-scrollbar-thumb {background:#69BDDB;}
+/* Handle on hover */
+.xcr::-webkit-scrollbar-thumb:hover {background: #69C;box-shadow:inset 0 0 3px rgba(0,0,0,0.5); }
+.fxcr{scrollbar-color: #bbb #1f82ec;scrollbar-width: thin;overflow-y: scroll;}
+
+.cgcstyle .frow:before,
+.cgcstyle.frow:after{content: "";clear: both;display: inline-table;}
+	.cgcstyle .noskew,
+	.cgcstyle .notransform{transform:none;}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific css here */
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+}
+@media screen and (max-height: 450px) {
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+}
+@media only screen and (max-width: 748px) and (min-width: 200px){
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+  }
+
+ 
+  </style>
+ </textarea>
+</div>
+  <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="btn-group" role="group" aria-label="Basic example">
+<button type="button" onclick="preview.document.write (document.getElementsByTagName (&#39;TEXTAREA&#39;)[0].value); preview.document.close(); preview.focus()" class="btn btn-md btn-primary">Preview</button>
+<button type="button" onclick="window.location.href=window.location.href" class="btn btn-md btn-primary">Reset</button>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="row">
+    <div class="col-sm-7">Min Width
+    <input type='range' min="23" max="100" value="100" step=".05">
+    Max Width
+    </div>
+    <div class="col-sm-4"> <span type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassTypo" aria-expanded="false" aria-controls="collapseClassTypo" class="btn btn-md btn-success">how to use</span></div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--/ Editor --->
+
+<div class="card">
+<div class="accordion" id="classTypo">
+  <div class="accordion-item">
+    <div id="collapseClassTypo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#classTypo">
+      <div class="accordion-body p-3 bg-body">
+        <h5>Source Editor tool is pretty straightforward</h5>
+        <p>Paste or type markup language in the above box, click the <strong>Preview</strong> button.</p>
+        <p>Refresh the page? All code will be deleted. Click the <strong>Reset</strong> button</p>
+        <p>Move the slider to test between <strong>min</strong> and <strong>max</strong> width -  simulates responsive layout</p>
+        <p>The Source Editor works with markup language, no markdown supported. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Render --->
+<div class="container-fluid bg-dark p-1 screensize">
+<div id="card-size" class="col-lg-12">
+  <iframe class="frame frender2" src="about:blank" name="preview" frameborder="0"></iframe>
+  </div>
+</div>
+<!--/ Render --->
+
+
+
+
+</div>
+
+<script>
+//;(function($){		
+let slider = document.querySelector('[type=range]')
+let div = document.querySelector('#card-size')
+slider.addEventListener('input', e => {
+  div.style.width = e.target.value + '%';
+})
+//})(jQuery);
+
+
+
+</script>
+</body>
+</html>

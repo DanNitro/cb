@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo - .cgcstyle</title>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="../cb-extraclass.css">
+
+
+
+<style>
+*{box-sizing:border-box;}
+body {min-height: 100vh;min-height: -webkit-fill-available;font-size:100%;font-family:-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";background-color:#f1f1f1;color:#555;margin:0 auto;overflow-x:hidden;}
+
+.fcode{border:none;padding:5px;width:100%;height:400px;scroll:auto;background:#f1fdfd;color:#333; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;font-size:17px;outline:none;}.fcode:focus{outline:none;box-shadow:inset 0 0 2px #666, 0 0 1px #000;}
+
+.frender2{min-height:900px;width:100%;background:#ffffff;}
+#aboutmetextarea { display: block; width:100%;margin:15px auto 22px auto; min-height:200px;max-width:100%;min-width:90%;}
+.screensize{background-image:url('../assets/img/screensize.svg');background-size:100% auto;background-position:0 20px;background-repeat:no-repeat;}
+a.branding{font-size:1.2em;color:#FFF;text-decoration:none;text-transform:uppercase;}
+a.branding:hover{font-size:1.2em;color:#F93;text-decoration:none;text-transform:uppercase;}
+.docb{padding:.5em 1.8em .5em;text-align:center;background-color:#036;border-radius:120px 0 120px 0;border-left:10px solid #F93;}
+@media screen and (max-height: 450px) {nav, nav .text-center, nav .text-end {text-align:center}}
+@media only screen and (max-width: 748px) and (min-width: 300px){
+{nav, nav .text-center, nav .text-end {text-align:center}
+  }
+</style>
+</head>
+
+<body>
+
+<nav class="container p-3 mt-0 mb-3 mx-auto bg-white">
+<div class="row">
+<div class="col-md-4"><span class="docb"><a class="branding" href="../cb-extracalss.html">Custom Gem Class [CGC]</a></span></div>
+<div class="col-md-4 text-center"></div>
+<div class="col-md-4 text-end"><a class="btn btn-md btn-primary" href="index.html">Examples</a></div>
+</div>
+</nav>
+<div class="container">
+
+<div class="card">
+<div class="col-md-12 p-3">
+<h3>.cgcstyle</h3>
+<p>This class name is used only as parent element.</p>
+<p>All other classe names will work only within this parent class</p>
+<p>The Source Editor tool contains a markup code using <code>.cgcstyle</code> as parent and other HTML elements within this <code>ul</code> container.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Editor --->
+<div class="col-md-12">
+ <textarea id="aboutmetextarea" class="fcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">&lt;ul class=&quot;cgcstyle&quot; style=&quot;display:block;width:100%;min-width:10%;box-sizing:border-box;padding:4em 0 0;list-style:none;line-height:normal;background-color:#cdcdcd;&quot;&gt;&lt;li style=&quot;display:block;width:80%;height:auto;margin:30px auto 35px auto;list-style:none;text-align:center;padding:.7em 0 .7em;background-color:#444;color:#ccc;font-size: calc(28px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;&quot;&gt;Header element&lt;/li&gt;&lt;li class=&quot;frow&quot; style=&quot;background-color:#fff;padding:1em 0 1.4em;&quot;&gt;&lt;p class=&quot;fleft blwidth-33 txtright&quot; style=&quot;box-sizing:border-box;background-color:#036;color:#fff;&quot;&gt;&lt;b class=&quot;blwidth-100&quot; style=&quot;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;padding:.5em;&quot;&gt;fleft blwidth-33 txtright&lt;/b&gt;&lt;/p&gt;&lt;p class=&quot;fleft blwidth-33 txtcenter&quot; style=&quot;box-sizing:border-box;background-color:#333; color:#f1f2f2;&quot;&gt;&lt;b class=&quot;blwidth-100&quot; style=&quot;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;padding:.5em;&quot;&gt;fleft blwidth-33 txtcenter&lt;/b&gt;&lt;/p&gt;&lt;p class=&quot;fleft blwidth-33 txtleft&quot; style=&quot;box-sizing:border-box;background-color:#ccc;&quot;&gt;&lt;b class=&quot;blwidth-100 &quot; style=&quot;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;padding:.5em;&quot;&gt;fleft blwidth-33 txtleft&lt;/b&gt;&lt;/p&gt;&lt;p class=&quot;flcrear&quot;&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;frow&quot; style=&quot;background-color:#fff;padding:1em 0 1.4em;&quot;&gt;&lt;p class=&quot;fleft blwidth-50 txtcenter responsive&quot; style=&quot;box-sizing:border-box;background-color:#f1f1f1;&quot;&gt;&lt;img class=&quot;skewleft-50 boradius-50 hopa-5 boxshadow-xl&quot; src=&quot;https://styles.redditmedia.com/t5_3oyfj/styles/image_widget_sm7x6846cf041.png&quot;/&gt;&lt;/p&gt;&lt;p class=&quot;fleft blwidth-50 txtcenter&quot; style=&quot;box-sizing:border-box;background-color:#333; color:#f1f2f2;&quot;&gt;&lt;span style=&quot;display:block;width:90%;height:auto;margin:0 auto;padding:2.5em .5em .2em;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;&quot;&gt;&lt;b class=&quot;blwidth-100 txtleft&quot; style=&quot;font-weight:100;&quot;&gt;&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;flcrear&quot;&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
+ 
+ 
+ 
+ 
+ 
+ <style>
+ /*** The CSS Style loaded Globaly ***/
+ /***
+ Custom Chaturbate Class
+ .cgcstyle must be set as the parent / class name assigned to parent element so no conflicts with other css styles
+ Any type of elements added within this class name will become child and inherit/apply
+ the following css
+***/
+
+.cgcstyle{line-height:normal;font-size: 100%;}
+.cgcstyle *{box-sizing:border-box;}
+
+/*** Block Width % expressed in fluid value ***/ 
+.cgcstyle .blwidth-100{width:100%;}
+.cgcstyle .blwidth-50{width:50%;}
+.cgcstyle .blwidth-33{width:33.33%;}
+
+/*** Block Transform skew CSS ***/ 
+.cgcstyle .skewleft-10{transform: perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-10px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .skewright-10{transform: perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(10px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .skewleft-50{transform: perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-50px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .skewright-50{transform: perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(50px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .noskew{transform:none;}
+/*** Block Border Radius CSS ***/
+.cgcstyle .boradius-5{border-radius:5px;}
+.cgcstyle .boradius-10{border-radius:10px;}
+.cgcstyle .boradius-50{border-radius:50px;}
+.cgcstyle .boradius-100{border-radius:100% 100% 100% 100%;}
+.cgcstyle .noradius{border-radius: 0;}
+/*** Block Box Shadow ***/
+.cgcstyle .boxshadow-sm{box-shadow:0 1px 2px rgba(0,0,0,0.50);}
+.cgcstyle .boxshadow-md{box-shadow:0 3px 7px rgba(0,0,0,0.50);}
+.cgcstyle .boxshadow-xl{box-shadow:0 1px 14px rgba(0,0,0,0.70);}
+.cgcstyle .boxshadow-xll{box-shadow:0 0 22px rgba(0,0,0,0.70);}
+.cgcstyle .noboxshadow{box-shadow:0 0 0 rgba(0,0,0,0.0);}
+/*** Float ***/
+.cgcstyle .frow:before,.frow:after,.flcrear:before,.flcrear:after{content: "";clear: both;display: inline-table;}
+.cgcstyle .fleft{float:left;}
+.cgcstyle .fright{float:right;}
+.cgcstyle .fnone{float:none;clear:both;}
+/*** Padding Left ***/
+.cgcstyle .leftpadd-15{padding-left:15px;}
+.cgcstyle .leftpadd-20{padding-left:20px;}
+.cgcstyle .leftpadd-50{padding-left:50px;}
+/*** Padding Right ***/
+.cgcstyle .rightpadd-15{padding-right:15px;}
+.cgcstyle .rightpadd-20{padding-right:20px;}
+.cgcstyle .rightpadd-50{padding-right:50px;}
+/*** Padding Top ***/
+.cgcstyle .toppadd-15{padding-top:15px;}
+.cgcstyle .toppadd-20{padding-top:20px;}
+.cgcstyle .toppadd-50{padding-top:50px;}
+/*** Padding Bottom ***/
+.cgcstyle .downpadd-15{padding-bottom:15px;}
+.cgcstyle .downpadd-20{padding-bottom:20px;}
+.cgcstyle .downpadd-50{padding-bottom:50px;}
+.cgcstyle .nopadd{padding:0;}
+/*** Align ***/
+.cgcstyle .txtleft{text-align:left;}
+.cgcstyle .txtright{text-align:right;}
+.cgcstyle .txtcenter{text-align:center;}
+/*** Margin Left***/
+.cgcstyle .mleft-10{margin-left:10px;}
+.cgcstyle .mleft-20{margin-left:20px;}
+.cgcstyle .mleft-50{margin-left:50px;}
+/*** Margin Right***/
+.cgcstyle .mright-10{margin-right:10px;}
+.cgcstyle .mright-20{margin-right:20px;}
+.cgcstyle .mright-50{margin-right:50px;}
+/*** Margin Top***/
+.cgcstyle .mtop-10{margin-top:10px;}
+.cgcstyle .mtop-20{margin-top:20px;}
+.cgcstyle .mtop-50{margin-top:50px;}
+/*** Margin Bottom***/
+.cgcstyle .mdown-10{margin-bottom:10px;}
+.cgcstyle .mdown-20{margin-bottom:20px;}
+.cgcstyle .mdown-50{margin-bottom:50px;}
+.cgcstyle .margin-z{margin:0;}
+.cgcstyle .margin-za{margin:0 auto;}
+/*** Font Style ***/
+.cgcstyle .bosh-dark{font-weight:bold;text-shadow:0 1px 2px rgba(0,0,0,0.6);}
+.cgcstyle .bosh-light{font-weight:bold;text-shadow:0 1px 2px rgba(255,255,255,0.6);}
+.cgcstyle .smsh-dark{font-weight:100;text-shadow:0 1px 2px rgba(0,0,0,0.6);}
+.cgcstyle .smsh-light{font-weight:100;text-shadow:0 1px 2px rgba(255,255,255,0.6);}
+.cgcstyle .txtnosh{text-shadow:none; text-shadow:0 0 0 rgba(0,0,0,0.0);}
+/*** Hover Block elements : Opacity ***/
+.cgcstyle .hopa-3{opacity:.5;}
+.cgcstyle .hopa-3:hover{opacity:1;}
+.cgcstyle .hopa-5{opacity:.7;}
+.cgcstyle .hopa-5:hover{opacity:1;}
+.cgcstyle .nohopa{opacity:1;}
+/*** Hover URL/Link Dark background***/
+.cgcstyle a.urdark:link,.cgcstyle a.urdark:visited {color: #777;}
+.cgcstyle a.urdark:hover,.cgcstyle a.urdark:active,.cgcstyle a.urdark:focus {color:#F36;}
+/*** Hover URL/Link Light background***/
+.cgcstyle a.urlight:link,.cgcstyle a.urlight:visited {color: #09C;}
+.cgcstyle a.urlight:hover,.cgcstyle a.urlight:active,.cgcstyle a.urlight:focus {color:#F60;}
+/*** Image Responsive ***/
+.cgcstyle img.responsive,.cgcstyle .responsive img{display:block;width:100%;height:auto;}
+/*** Font Size - Typography ***/
+.cgcstyle h1.heading-1,.cgcstyle .heading-1 h1{font-size: 2.5em;line-height:normal;}
+.cgcstyle h2.heading-2,.cgcstyle .heading-2 h2{font-size: 1.875em;line-height:normal;}
+.cgcstyle p.para,.cgcstyle .para p{font-size: 0.875em;line-height:normal;}
+/*** Scrollbar ***/
+.xcr::-webkit-scrollbar {width: 8px; height:8px;background-color:#69BDDB;}
+	/* Track */
+.xcr::-webkit-scrollbar-track {background: #fff;box-shadow:inset 0 0 3px rgba(0,0,0,0.3); }
+ /* Handle */
+.xcr::-webkit-scrollbar-thumb {background:#69BDDB;}
+/* Handle on hover */
+.xcr::-webkit-scrollbar-thumb:hover {background: #69C;box-shadow:inset 0 0 3px rgba(0,0,0,0.5); }
+.fxcr{scrollbar-color: #bbb #1f82ec;scrollbar-width: thin;overflow-y: scroll;}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific css here */
+.cgcstyle{line-height:normal;font-size: 100%;} 
+.cgcstyle .boxshadow-sm,.cgcstyle .boxshadow-md,.cgcstyle .boxshadow-xl,.cgcstyle .boxshadow-xll,.cgcstyle .noboxshadow{box-shadow:0 0 0 rgba(0,0,0,0.0);}
+.cgcstyle .blwidth-100,.cgcstyle .blwidth-50,.cgcstyle .blwidth-33{width:100%;float:none;clear:both;}
+.cgcstyle .skewleft-10,.cgcstyle .skewright-10,.cgcstyle .skewleft-50,.cgcstyle .skewright-50,.cgcstyle .notransform{transform: none;}
+.cgcstyle .txtright,.cgcstyle .txtleft{text-align:center;}
+}
+@media only screen and (max-width: 748px) and (min-width: 200px){
+.cgcstyle .boxshadow-sm,.cgcstyle .boxshadow-md,.cgcstyle .boxshadow-xl,.cgcstyle .boxshadow-xll,.cgcstyle .noboxshadow{box-shadow:0 0 0 rgba(0,0,0,0.0);}
+.cgcstyle .blwidth-100,.cgcstyle .blwidth-50,.cgcstyle .blwidth-33{width:100%;float:none;clear:both;}
+.cgcstyle .skewleft-10,.cgcstyle .skewright-10,.cgcstyle .skewleft-50,.cgcstyle .skewright-50,.cgcstyle .notransform{transform: none;}
+.cgcstyle .txtright,.cgcstyle .txtleft{text-align:center;}
+  }
+ </style>
+ </textarea>
+</div>
+  <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="btn-group" role="group" aria-label="Basic example">
+<button type="button" onclick="preview.document.write (document.getElementsByTagName (&#39;TEXTAREA&#39;)[0].value); preview.document.close(); preview.focus()" class="btn btn-md btn-primary">Preview</button>
+<button type="button" onclick="window.location.href=window.location.href" class="btn btn-md btn-primary">Reset</button>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="row">
+    <div class="col-sm-7">Min Width
+    <input type='range' min="23" max="100" value="100" step=".05">
+    Max Width
+    </div>
+    <div class="col-sm-4"> <span type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassTypo" aria-expanded="false" aria-controls="collapseClassTypo" class="btn btn-md btn-success">how to use</span></div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--/ Editor --->
+
+<div class="card">
+<div class="accordion" id="classTypo">
+  <div class="accordion-item">
+    <div id="collapseClassTypo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#classTypo">
+      <div class="accordion-body p-3 bg-body">
+        <h5>Source Editor tool is pretty straightforward</h5>
+        <p>Paste or type markup language in the above box, click the <strong>Preview</strong> button.</p>
+        <p>Refresh the page? All code will be deleted. Click the <strong>Reset</strong> button</p>
+        <p>Move the slider to test between <strong>min</strong> and <strong>max</strong> width -  simulates responsive layout</p>
+        <p>The Source Editor works with markup language, no markdown supported. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Render --->
+<div class="container-fluid bg-dark p-1 screensize">
+<div id="card-size" class="col-lg-12">
+  <iframe class="frame frender2" src="about:blank" name="preview" frameborder="0"></iframe>
+  </div>
+</div>
+<!--/ Render --->
+
+
+
+
+</div>
+
+<script>
+//;(function($){		
+let slider = document.querySelector('[type=range]')
+let div = document.querySelector('#card-size')
+slider.addEventListener('input', e => {
+  div.style.width = e.target.value + '%';
+})
+//})(jQuery);
+
+
+
+</script>
+</body>
+</html>

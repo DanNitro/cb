@@ -1,0 +1,856 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaturbate Extras Class</title>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="cb-extraclass.css">
+
+<style>
+@media screen and (max-height: 450px) {.sidenav {padding-top: 15px;}.sidenav a {font-size: 14px;}}
+@media only screen and (max-width: 748px) and (min-width: 300px){
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 14px;}
+  }
+  
+body {min-height: 100vh;min-height: -webkit-fill-available;font-size:100%;font-family:-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";background-color:#f1f1f1;color:#555;margin:0 auto;overflow-x:hidden;}
+html {height: -webkit-fill-available;}
+.sidenav {height: 100%;width: 190px;position: fixed;z-index: 1;top: 0;left: 0;background-color:#fcfcfc;overflow-x: hidden;padding-top: 20px;box-shadow:6px 0 7px rgba(0,0,0,0.20);}
+.sidenav a {padding: 7px 8px 7px 16px;text-decoration: none;font-size: 14px;color: #069;display: block;border-bottom:1px solid rgba(0,0,0,0.10);}
+.sidenav a:before{content:"";display:block;width:1px;height:1px;background-color:#f1f1f1;margin:0;transform:translate(-17px,31px);transition: ease-in-out .3s;}
+.sidenav a:hover:before{content:"";display:block;width:120%;height:1px;margin:0;transform:translate(-17px,31px);background-color:#F60;}.sidenav a:hover {color: #F60;}
+.sidenav span{display:block;width:100%;height:auto;margin:0 auto;text-indent:5px;font-size:13px;color:#777;}
+.main {margin-left: 190px;font-size: 28px;padding: 0px 5px 5px 20px;box-shadow:-6px 0 5px rgba(0,0,0,0.20);background-color:#fff;}
+.main h2{font-size:2em;font-family:-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color:#888;font-weight:100;}
+.main p{font-size:.67em;font-family:-apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color:#555;font-weight:400;}
+/***  ***/
+.cardcode{display:block;width:97%;box-sizing:border-box;overflow-wrap: break-word ;word-break: break-word;padding:.5em .5em .3em;box-shadow:0 0 4px #666;background-color:#E6F9FF;border-radius:7px;}.cardcode pre{background-color:#fff;}
+ h2.totop:after{content:"";display:block;float:left;width:30px;height:30px;background-image:url('assets/img/hashtag-svg.svg');background-repeat:no-repeat;background-size:100% 100%;background-position:center center;transform:translate(-10px, 20px);margin-left:10px;opacity:0;transition:all .3s;}
+ h2.totop span{color:#666;text-decoration:underline;}
+ h2.totop span:hover{color:#369;text-decoration:underline;}
+h2:hover:after{content:"";opacity:.5;}
+.doactive:after{content:"";display:block;width:20px;height:20px;float:left;background-image: url('assets/img/caret.svg');background-position:0 0;background-color:;background-size:50% 50%;background-repeat:no-repeat;transform:rotate(-90deg) translate(5px,3px);transition:all .3s;}.doactive:hover:after{content:"";display:block;width:20px;height:20px;float:left;background-image: url('assets/img/caret.svg');background-position:0 0;background-color:;background-size:50% 50%;background-repeat:no-repeat;transform:rotate(0) translate(5px,7px);}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="sidenav xcr fxcr">
+  <a href="#about">About</a>
+  <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassNames" aria-expanded="false" aria-controls="collapseClassNames" class="doactive">.Class names</a>
+<div class="accordion" id="classNames">
+  <div class="accordion-item">
+    <div id="collapseClassNames" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#classNames">
+      <div class="accordion-body p-0">
+      <span>Parent</span>
+        <a href="#cgcstyle">.cgcstyle</a>
+        <span>Blocks</span>
+        <a href="#gr">.gr-</a>
+        <span>Transform</span>
+        <a href="#skewleft">.lskew-</a>
+        <a href="#skewright">.rskew-</a>
+        <a href="#noskew">.noskew</a>
+        <span>Border radius</span>
+        <a href="#brad">.brad-</a>
+        <a href="#norad">.norad-</a>
+        <span>Box Shadow</span>
+        <a href="#boxsh">.boxsh-</a>
+        <a href="#nosh">.nosh</a>
+        <span>Align, Margins and Paddings</span>
+        <a href="#txtalign">text align</a>
+        <a href="#margin">margin</a>
+        <a href="#padding">padding</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassTypo" aria-expanded="false" aria-controls="collapseClassTypo" class="doactive">Typography</a>
+<div class="accordion" id="classTypo">
+  <div class="accordion-item">
+    <div id="collapseClassTypo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#classTypo">
+      <div class="accordion-body p-0">
+        <span>Styleup Text</span>
+        <a href="#text-shadow">text-shadow</a>
+        <a href="#letter-spacing">letter-spacing</a>
+        <a href="#font-size">font-size</a>
+        <span>Scroll Style</span>
+        <a href="#xcr">.xcr .fxcr</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassHover" aria-expanded="false" aria-controls="collapseClassHover" class="doactive">.Class Hover</a>
+<div class="accordion" id="classHover">
+  <div class="accordion-item">
+    <div id="collapseClassHover" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classHover">
+      <div class="accordion-body p-0">
+        <span>Opacity</span>
+        <a href="#hopa">.hopa-</a>
+        <a href="#nohopa">.nohopa</a>
+        <span>Links</span>
+        <a href="#urdark">.urdark</a>
+        <a href="#urlight">.urlight</a>
+      </div>
+    </div>
+  </div>
+</div>  
+  
+  
+  <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassImage" aria-expanded="false" aria-controls="collapseClassImage" class="doactive">Image</a>
+<div class="accordion" id="classImage">
+  <div class="accordion-item">
+    <div id="collapseClassImage" class="accordion-collapse collapse hide" aria-labelledby="headingFour" data-bs-parent="#classImage">
+      <div class="accordion-body p-0">
+        <span>Responsive</span>
+        <a href="#responsive">.responsive</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  <a href="#examplex">Examples</a>
+</div>
+
+<!-- Main -->
+<div id="top" class="main container p-3">
+<!-- About -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="about">About</span></h2>
+ <div class="col-md-12">
+  <p>Custom Gem Class [CGC]</p>
+ <p><code>.cgcstyle</code> must be set as the parent / class name assigned to parent element so no conflicts with other css styles</p>
+ <p>Any type of elements added within this class name will become child and inherit/apply the following css</p>
+ </div>
+ </div>
+<!--/ About --> 
+
+
+<!-- .cgcstyle -->
+<div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="cgcstyle">.cgcstyle</span></h2>
+ <div class="col-md-12">
+ <p><code>.cgcstyle</code> as mentioned above, the parent wrapper must use this custom class in order for additional child class names to work </p>
+ <p><strong>Example:</strong></p>
+<pre class="pre-scrollable fs-5">&lt;p class=&quot;cgcstyle&quot;&gt;
+&lt;b class=&quot;hopa-3&quot;&gt;Hover me. This is a text using additional class names&lt;/b&gt;&lt;/p&gt;</pre>
+<p><strong>Render:</strong></p>
+<p class="cgcstyle">
+   <b class="hopa-3">Hover me. This is a text using additional class names</b>
+</p>
+<p>The above text is using <code>.hopa-3</code> class which adds a hover opacity effect.<br>
+Without the parent class <code>.cgcstyle</code> the functionality of the opacity effect will not work.</p>
+<p>Our suggestion is to use <code>.cgcstyle</code> as the parent class and assigned to the main HTML element. Most flexible one is <code>ul</code>.</p>
+<p><strong>Example:</strong></p>
+<p>For the purpose of this demo, I'm using <code>ul</code> HTML markup tag with inline css</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">&lt;ul class=&quot;cgcstyle&quot; style=&quot;display:block;width:100%;min-width:10%;height:auto;padding:0;list-style:none;margin:0 auto;background-color:#222;color:#f1f1f1;font-size:15px;&quot;&gt;... all other HTML elements holding content to be added here...&lt;/ul&gt;</pre>
+</div>
+
+<p><strong>Render:</strong></p>
+
+<ul class="cgcstyle" style="display:block;width:100%;min-width:10%;height:auto;padding:0;list-style:none;margin:0 auto;background-color:#222;color:#f1f1f1;font-size:15px;">... all other HTML elements holding content to be added here...</ul>
+
+ </div>
+ </div>
+<!--/ .cgcstyle -->
+
+
+
+<!-- .ge -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="gr">.gr-</span></h2>
+ <div class="col-md-12">
+ <p>
+<code>.gr-1 {width: 8.33%;}</code><br>
+<code>.gr-2 {width: 16.66%;}</code><br>
+<code>.gr-3 {width: 25%;}</code><br>
+<code>.gr-4 {width: 33.33%;}</code><br>
+<code>.gr-5 {width: 41.66%;}</code><br>
+<code>.gr-6 {width: 50%;}</code><br>
+<code>.gr-7 {width: 58.33%;}</code><br>
+<code>.gr-8 {width: 66.66%;}</code><br>
+<code>.gr-9 {width: 75%;}</code><br>
+<code>.gr-10 {width: 83.33%;}</code><br>
+<code>.gr-11 {width: 91.66%;}</code><br>
+<code>.gr-12 {width: 100%;}</code><br>
+ to show a full-width block use <code>.gr-12</code></p>
+ 
+ <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassGR" aria-expanded="false" aria-controls="collapseClassGR" class="btn btn-lg btn-primary">Click to see demo using .gr- class</a>
+<div class="accordion" id="classGR">
+  <div class="accordion-item">
+    <div id="collapseClassGR" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classGR">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="col-md-12">
+            <div class="col-1" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-1</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-2" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-2</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-3" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-3</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-4" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-4</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-5" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-5</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-6" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-6</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-7" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-7</code></div>
+          </div>
+          
+          
+          <div class="col-md-12">
+            <div class="col-8" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-8</code></div>
+          </div>
+          
+          
+          <div class="col-md-12">
+            <div class="col-9" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-9</code></div>
+          </div>
+          
+          
+          <div class="col-md-12">
+            <div class="col-10" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-10</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-11" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-11</code></div>
+          </div>
+          
+          <div class="col-md-12">
+            <div class="col-12" style="text-align:center;background-color:#f1f1f1;border:1px solid #ccc;"><code>.gr-12</code></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+ 
+ 
+ <p><code>[class*="gr-"] {float: left;padding: 15px;}</code> - all these blocks are set to flat left.</p>
+ <p><a href="examples/layout-examples-using-blocks.html">See demo and source code</a></p>
+ 
+ 
+ 
+ 
+ 
+  <p><code>.frow:before,.frow:after{content: "";clear: both;display: inline-table;}</code> - fix floating, makes blocks display in row</p>
+ <p><strong>Example:</strong></p>
+ <div class="cardcode">
+ <pre class="pre-scrollable fs-5 xcr fxcr">&lt;ul class=&quot;cgcstyle&quot; style=&quot;display:block;width:100%;min-width:20%;height:auto;margin:0 auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;&quot;&gt;&lt;li class=&quot;gr-12&quot; style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;ul id=&quot;show&quot; class=&quot;frow&quot;  style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;li class=&quot;gr-3&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-3&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</pre></div>
+ <p><strong>Render:</strong></p>
+ 
+<ul class="cgcstyle" style="display:block;width:100%;min-width:20%;height:auto;margin:0 auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;"><li class="gr-12" style="list-style:none;padding:0;margin:0 auto;"><ul class="frow" style="list-style:none;padding:0;margin:0 auto;"><li class="gr-3" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-3</li><li class="gr-3" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-3</li><li class="gr-3" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-3</li><li class="gr-3" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-3</li><li class="fnone"></li></ul></li></ul>
+
+<p>The above markup is using <code>.gr-3</code> and <code>.frow</code> class to display the main parent and a 4 child blocks in a single row floating left. Markup tag used is <code>li</code> and it is responsive</p>
+
+<p><a href="examples/layout-examples-using-frow.html">See demo and source code</a></p>
+
+<p>Let's try with 2 child elements</p>
+<p><strong>Example:</strong></p>
+<p>2 elements using <code>li</code> HTML tag with <code>.gr-6</code> class</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">&lt;ul class=&quot;cgcstyle&quot; style=&quot;display:block;width:100%;min-width:20%;height:auto;margin:0 auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;&quot;&gt;&lt;li class=&quot;gr-12 show&quot; style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;ul class=&quot;frow&quot;  style=&quot;list-style:none;padding:0;margin:0 auto;&quot;&gt;&lt;li class=&quot;gr-6&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-6&lt;/li&gt;&lt;li class=&quot;gr-6&quot; style=&quot;text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;&quot;&gt;.gr-6&lt;/li&gt;&lt;li class=&quot;fnone&quot;&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+
+<p><strong>Render:</strong></p>
+
+<ul class="cgcstyle" style="display:block;width:100%;min-width:20%;height:auto;margin:0 auto;padding:0;box-sizing:border-box;list-style:none;line-height:normal;"><li class="gr-12" style="list-style:none;padding:0;margin:0 auto;"><ul class="frow"  style="list-style:none;padding:0;margin:0 auto;"><li class="gr-6" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-6</li><li class="gr-6" style="text-align:center;background-color:#f1f1f1;color:#555;box-shadow:inset 0 0 1px #000;list-style:none;">.gr-6</li><li class="fnone" style="display:block;width:100%;height:auto;margin:0 auto;float:none;clear:both;"></li></ul></li></ul>
+
+
+ </div>
+ </div>
+<!--/ .gr -->
+
+
+
+
+<!-- skewleft -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="skewleft">Transform: .lskew-</span></h2>
+ <div class="col-md-12">
+  <p>.lskew- is the class name for a combination of css transform. <strong>Transfrom Left</strong></p>
+  <p><code>lskew-1</code> renders less css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.lskew-1{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-100px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+ <p><code>lskew-2</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.lskew-2{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-200px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+ <p><code>lskew-3</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.lskew-3{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-300px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+
+ <p><code>lskew-4</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.lskew-4{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-400px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+
+ <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassSKL" aria-expanded="false" aria-controls="collapseClassSKL" class="btn btn-lg btn-primary">Click to see demo using .lskew- class</a>
+<div class="accordion" id="classSKL">
+  <div class="accordion-item">
+    <div id="collapseClassSKL" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classSKL">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid lskew-1 text-center">
+                 <img src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid lskew-2  text-center">
+                <img src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+ <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid lskew-3 text-center">
+                 <img src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid lskew-4 text-center">
+                <img src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div> 
+</div>   
+
+
+ </div>
+ </div>
+<!--/ skewleft --> 
+
+
+<!-- skewright -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="skewright">Transform: .rskew-</span></h2>
+ <div class="col-md-12">
+   <p>.rskew- is the class name for a combination of css transform. <strong>Transfrom Right</strong></p>
+  <p><code>rskew-1</code> renders less css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.rskew-1{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(100px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+ <p><code>rskew-2</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.rskew-2{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(200px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+ <p><code>rskew-3</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.rskew-3{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(300px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+
+
+ <p><code>rskew-4</code> renders a stronger css effect</p>
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.rskew-4{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(400px) translateY(5%) translateX(2%);transform-style: preserve-3d;}</pre></div>
+ 
+ 
+ 
+  <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassSKR" aria-expanded="false" aria-controls="collapseClassSKR" class="btn btn-lg btn-primary">Click to see demo using .rskew- class</a>
+<div class="accordion" id="classSKR">
+  <div class="accordion-item">
+    <div id="collapseClassSKR" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classSKR">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid rskew-1 text-center">
+                 <img src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid rskew-2  text-center">
+                <img src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+ <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid rskew-3 text-center">
+                 <img src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid rskew-4 text-center">
+                <img src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div> 
+</div>  
+ 
+ 
+ 
+ 
+ </div>
+ </div>
+<!--/ skewright --> 
+
+
+<!-- noskew -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="noskew">No-Transform: .noskew</span></h2>
+ <div class="col-md-12">
+  <p>noskew - Adding this class is removing any skew effect. <strong>NO Transfrom</strong></p>
+ <p><code>.noskew</code> removes any transform css effect</p>
+
+<div class="cardcode">
+<pre class="fs-6 xcr fxcr">.noskew{transform:none;}</pre></div>
+ 
+ </div>
+ </div>
+<!--/ noskew -->
+
+
+<!-- boradius -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="brad">Border Radius: .brad-</span></h2>
+ <div class="col-md-12">
+  <p>brad</p>
+ <p><code>.brad-</code> adds a piece of css to render round corners</p>
+ <p>Bigger border radius / round corners using following class names:<br>
+   <code>.brad-5 </code> 5px border radius / round corners<br>
+   <code>.brad-10 </code> 15px border radius / round corners<br>
+   <code>.brad-25 </code> 25px border radius / round corners<br>
+   <code>.brad-100 </code> 100% border radius / round corners
+   </p>
+   
+   
+    <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassRad" aria-expanded="false" aria-controls="collapseClassRad" class="btn btn-lg btn-primary">Click to see demo using .rskew- class</a>
+<div class="accordion" id="classRad">
+  <div class="accordion-item">
+    <div id="collapseClassRad" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classRad">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid text-center">
+                 <img class="brad-5" src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid text-center">
+                <img class="brad-10" src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+ <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid text-center">
+                 <img class="brad-25" src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid text-center">
+                <img class="brad-100" src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div> 
+</div> 
+   
+   
+   
+ </div>
+ </div>
+<!--/ boradius -->
+
+
+
+<!-- noradius -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="norad">No-Radius: .norad</span></h2>
+ <div class="col-md-12">
+  <p>norad</p>
+ <p><code>.norad</code> </p>
+ <p>Removes any border radius (if existing).</p>
+ </div>
+ </div>
+<!--/ noradius -->
+
+
+<!-- boxshadow -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="boxsh">Box Shadow: .boxsh-</span></h2>
+ <div class="col-md-12">
+  <p>boxshadow</p>
+ <p><code>.boxsh-</code> add css box-shadow to any blcok element</p>
+ <p><code>.boxsh-sm{box-shadow:0 1px 2px rgba(0,0,0,0.50);}</code></p>
+ <p><code>.boxsh-md{box-shadow:0 3px 7px rgba(0,0,0,0.50);}</code></p>
+ <p><code>.boxsh-xl{box-shadow:0 1px 14px rgba(0,0,0,0.70);}</code></p>
+ <p><code>.boxsh-lg{box-shadow:0 0 22px rgba(0,0,0,0.70);}</code></p>
+ 
+ 
+  <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassSH" aria-expanded="false" aria-controls="collapseClassSH" class="btn btn-lg btn-primary">Click to see demo using .boxsh- class</a>
+<div class="accordion" id="classSH">
+  <div class="accordion-item">
+    <div id="collapseClassSH" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classSH">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid text-center p-5">
+                 <img class="boxsh-sm" src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid text-center p-5">
+                <img class="boxsh-md" src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+ <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="img-fluid text-center p-5">
+                 <img class="boxsh-xl" src="assets/img/demo-tall.jpg"/>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="img-fluid text-center p-5">
+                <img class="boxsh-lg" src="assets/img/demo-tall.jpg"/>
+               </div>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+ 
+ 
+ 
+ 
+ </div>
+ </div>
+<!--/ boxshadow -->
+
+
+<!-- boxshadow -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="nosh">No-Box Shadow: .nosh</span></h2>
+ <div class="col-md-12">
+  <p>nosh</p>
+ <p><code>.nosh{box-shadow:0 0 0 rgba(0,0,0,0.0);}</code> remove any shadow effect</p>
+ </div>
+ </div>
+<!--/ noboxshadow -->
+
+
+
+
+
+
+
+<!-- txtleft -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="txtalign">Align: text align</span></h2>
+ <div class="col-md-12">
+  <p>Simple inline css will do the trick</p>
+ <p><code>text-align:left;</code> text align left</p>
+ <p><code>text-align:right;</code>  text align right</p>
+ <p><code>text-align:center;</code>  text align center</p>
+ </div>
+ </div>
+<!--/ txtleft -->
+
+
+
+
+
+
+
+
+<!-- mleft -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="margin">Margin</span></h2>
+ <div class="col-md-12">
+ <p>Use inline css when needed</p>
+ <p><code>margin-left: <em>{value}</em></code> moves a block elements away from <strong>left</strong> margin with  <em>{value}</em></p>
+ <p><code>margin-right: <em>{value}</em></code> moves a block elements away from <strong>right</strong> margin with  <em>{value}</em></p>
+ <p><code>margin-top: <em>{value}</em></code> moves a block elements away from <strong>top</strong> margin with  <em>{value}</em></p>
+ <p><code>margin-bottom: <em>{value}</em></code> moves a block elements away from <strong>bottom</strong> margin with  <em>{value}</em></p>
+ 
+ 
+ 
+ <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassMar" aria-expanded="false" aria-controls="collapseClassMar" class="btn btn-lg btn-primary">Click to see demo using margin css</a>
+<div class="accordion" id="classMar">
+  <div class="accordion-item">
+    <div id="collapseClassMar" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#classMar">
+      <div class="accordion-body p-0">
+        <div class="card">
+        
+          <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="">
+                 <div style="display:block;width:100%;height:auto;margin:0 auto;background-color:#ccc;"><span style="display:block;width:250px;height:auto;background-color:#222;padding:.7em 1em .7em;color:#6CC;font-size:15px;margin-left:20px;">margin-left:20px;</span></div>
+                 </div>
+             </div>
+             
+            <div class="col-6">
+               <div class="">
+                 <div style="display:block;width:100%;height:auto;margin:0 auto;background-color:#ccc;"><span style="display:block;width:250px;height:auto;background-color:#222;padding:.7em 1em .7em;color:#6CC;font-size:15px;margin-left:250px;">margin-left:250px;</span></div>
+                 </div>
+             </div>
+     </div>     
+ <div class="row cgcstyle">
+            <div class="col-6">
+               <div class="">
+                 <div style="display:block;width:100%;height:auto;margin:0 auto;background-color:#ccc;"><span style="display:block;width:250px;height:auto;background-color:#222;padding:.7em 1em .7em;color:#6CC;font-size:15px;margin:0 0 0 120px;">margin:0 0 0 120px;</span></div>
+                 </div>
+             </div>
+             
+             <div class="col-6">
+               <div class="">
+                 <div style="display:block;width:100%;height:auto;margin:0 auto;background-color:#ccc;"><span style="display:block;width:150px;height:auto;background-color:#222;padding:.7em 1em .7em;color:#6CC;font-size:15px;margin-top:40px;">margin-top:40px;</span></div>
+                 </div>
+         </div>    </div>
+          
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+ 
+ 
+ 
+ </div>
+ </div>
+<!--/ mleft -->
+
+
+
+
+<!-- mright -->
+ <div class="container-fluid p-3 mt-5 mb-5">
+ <h2 class="totop"><span id="padding">Padding</span></h2>
+ <div class="col-md-12">
+  <p>Use inline css when needed</p>
+ <p><code>padding-left: <em>{value}</em></code> adds padding to <strong>left</strong> expressed by <em>{value}</em></p>
+ <p><code>padding-right: <em>{value}</em></code> adds padding to <strong>right</strong> expressed by <em>{value}</em></p>
+  <p><code>padding-top: <em>{value}</em></code> adds padding to <strong>top</strong> expressed by <em>{value}</em></p>
+   <p><code>padding-bottom: <em>{value}</em></code> adds padding to <strong>bottom</strong> expressed by <em>{value}</em></p>
+ </div>
+ </div>
+<!--/ mright -->
+
+
+<!-- text-shadow -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="text-shadow">Inline CSS: text-shadow</span></h2>
+ <div class="col-md-12">
+  <p>text-shadow - can be used as inline css style to spice-up text elements</p>
+ <p><code>text-shadow: 0 1px 1px #000</code> a black blurred shadow shows up to selected text </p>
+
+
+<!-- acordion -->
+<a type="button" data-bs-toggle="collapse" data-bs-target="#collapseClassTshadow" aria-expanded="false" aria-controls="collapseClassTshadow" class="btn btn-lg btn-primary">Demo. Using text with text-shadow</a>
+<div class="accordion" id="classTshadow">
+  <div class="accordion-item">
+    <div id="collapseClassTshadow" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#classTshadow">
+      <div class="accordion-body p-0">
+        
+        <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:15px;color:#555;text-shadow:0 1px 1px #000;">color:#555; <code>text-shadow:0 1px 1px #000;</code></p>
+        </div>
+        
+        <div class="col-md-12">
+        <p style="display:block;width:90%;height:auto;padding:.5em;margin:10px auto 12px auto;text-align:left;font-size:15px;background-color:#222;color:#fff;text-shadow:0 1px 1px #9F0;">color:#fff; text-shadow:0 1px 1px #9F0;</code></p>
+        </div>
+        
+        <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:15px;background-color:#f1f1f1;color:#000;text-shadow:0 1px 1px #fff;">color:#000; <code>text-shadow:0 1px 1px #fff;</code></p>
+        </div>
+        
+        
+         <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:1.7em;background-color:#f1f1f1;color: #202c2d;
+background: #FFFFFF;
+text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;">Cool Text with a lot of text-shadow</p>
+        </div>
+        
+        
+          <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:1.7em;color: #616161;
+background: #bababa;
+text-shadow: #e0e0e0 1px 1px 0;
+color: #616161;
+background: #bababa;">Cool Text with text-shadow</p>
+        </div>
+        
+        
+          <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:1.7em;color: #FFFFFF;
+background: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+color: #FFFFFF;
+background: #FFFFFF;">Cool Text with text-shadow</p>
+        </div>
+        
+        <div class="col-md-12">
+        <p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:1.7em;color: #FFFFFF;
+background: #F7C1C1;
+text-shadow: 4px 3px 0px #7A7A7A;
+color: #FFFFFF;
+background: #F7C1C1;">Cool Text with text-shadow</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ acordion -->
+
+<p> Inline css use pixels values along with color of the shadow</p>
+<p style="display:block;width:90%;padding:.5em;height:auto;margin:10px auto 12px auto;text-align:left;font-size:1.3em;background: #F7C1C1;text-shadow: 4px 3px 0px #7A7A7A;color: #FFFFFF;
+">background: #F7C1C1;text-shadow: 4px 3px 0px #7A7A7A;color: #FFFFFF;</p>
+<p><code>background:</code> or <code>background-color:</code> followed by HEX value (the color).</p>
+<p><code>text-shadow:</code> followed by 4px move the shadow left, 3px move the shadow down, 0px is used for blurring the shadow. In this case no blur effect.</p>
+<p><code>#7A7A7A</code> is the HEX value , the color of the shadow. <code>rgb</code> or <code>rgba</code> values can be used too.
+ </div>
+ </div>
+<!--/ xcr -->
+
+
+
+<!-- xcr -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="xcr">Custom Scroll : .xcr .fxcr</span></h2>
+ <div class="col-md-12">
+  <p>xcr</p>
+ <p><code>.xcr .fxcr</code> </p>
+
+ </div>
+ </div>
+<!--/ xcr -->
+
+
+<!-- hopa -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="hopa">CSS Opacity : .hopa-</span></h2>
+ <div class="col-md-12">
+  <p>hopa</p>
+ <p><code>.hopa-</code> </p>
+
+ </div>
+ </div>
+<!--/ hopa -->
+
+
+<!-- nohopa -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="nohopa">No-Opacity : .nohopa</span></h2>
+ <div class="col-md-12">
+  <p>nohopa</p>
+ <p><code>.nohopa</code> </p>
+
+ </div>
+ </div>
+
+<!--/ nohopa -->
+
+
+
+<!-- urdark -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="urdark">Link on dark : .urdark</span></h2>
+ <div class="col-md-12">
+  <p>urdark</p>
+ <p><code>.urdark</code> </p>
+
+ </div>
+ </div>
+<!--/ urdark -->
+
+<!-- urlight -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="urlight">Link on light : .urlight</span></h2>
+ <div class="col-md-12">
+  <p>urlight</p>
+ <p><code>.urlight</code> </p>
+
+ </div>
+ </div>
+<!--/ urlight -->
+
+
+<!-- urlight -->
+ <div class="container-fluid p-3">
+ <h2 class="totop"><span id="urlight">Responsive : .responsive</span></h2>
+ <div class="col-md-12">
+  <p>responsive</p>
+ <p><code>img.responsive</code> </p>
+ <p><code>.responsive img</code> </p>
+
+ </div>
+ </div>
+<!--/ urlight -->
+
+
+
+
+
+ 
+</div><!--/ Main -->
+
+</body>
+</html>

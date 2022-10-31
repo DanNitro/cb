@@ -1,0 +1,119 @@
+/***
+ Custom Gem Class
+ .cgcstyle must be set as the parent / class name assigned to parent element so no conflicts with other css styles
+ Any type of elements added within this class name will become child and inherit/apply
+ the following css
+***/
+
+.cgcstyle{line-height:normal;font-size: 100%;}
+.cgcstyle *{box-sizing:border-box;}
+
+/*** Block Width % expressed in fluid value ***/ 
+.cgcstyle [class*="gr-"] {float: left;padding: 15px;}
+.cgcstyle .gr-1 {width: 8.33%;}
+.cgcstyle .gr-2 {width: 16.66%;}
+.cgcstyle .gr-3 {width: 25%;}
+.cgcstyle .gr-4 {width: 33.33%;}
+.cgcstyle .gr-5 {width: 41.66%;}
+.cgcstyle .gr-6 {width: 50%;}
+.cgcstyle .gr-7 {width: 58.33%;}
+.cgcstyle .gr-8 {width: 66.66%;}
+.cgcstyle .gr-9 {width: 75%;}
+.cgcstyle .gr-10 {width: 83.33%;}
+.cgcstyle .gr-11 {width: 91.66%;}
+.cgcstyle .gr-12 {width: 100%;}
+/*** Float ***/
+.cgcstyle .fleft{float:left;}
+.cgcstyle .fright{float:right;}
+.cgcstyle .fnone{float:none;clear:both;}
+
+/*** Block Transform skew CSS ***/ 
+.cgcstyle .lskew-1{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-100px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-2{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-200px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-3{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-300px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+.cgcstyle .lskew-4{transform:  perspective(2100px) rotateY(25deg) scaleZ(1.2) translateZ(-400px) translateY(5%) translateX(2%);transform-style: preserve-3d;}
+
+.cgcstyle .rskew-1{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(100px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-2{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(200px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-3{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(300px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .rskew-4{transform:  perspective(2100px) rotateY(-25deg) scaleZ(-1.2) translateZ(400px) translateY(5%) translateX(-2%);transform-style: preserve-3d;}
+.cgcstyle .noskew{transform:none;}
+
+
+/*** Block Border Radius ***/
+.cgcstyle .brad-5{border-radius:5px 5px 5px 5px;}
+.cgcstyle .brad-10{border-radius:10px 10px 10px 10px;}
+.cgcstyle .brad-25{border-radius:25px 25px 25px 25px;}
+.cgcstyle .brad-100{border-radius:100% 100% 100% 100%;}
+.cgcstyle .norad{border-radius: none; border-radius:0;}
+
+
+/*** Block Box Shadow ***/
+.cgcstyle .boxsh-sm{box-shadow:0 1px 8px rgba(0,0,0,0.90);}
+.cgcstyle .boxsh-md{box-shadow:0 3px 11px rgba(0,0,0,0.90);}
+.cgcstyle .boxsh-xl{box-shadow:0 1px 14px rgba(0,0,0,0.90);}
+.cgcstyle .boxsh-lg{box-shadow:0 0 22px rgba(0,0,0,0.90);}
+.cgcstyle .nosh{box-shadow:0 0 0 rgba(0,0,0,0.0);}
+
+
+/*** Hover Block elements : Opacity ***/
+.cgcstyle .hopa-3{opacity:.5;}
+.cgcstyle .hopa-3:hover{opacity:1;}
+.cgcstyle .hopa-5{opacity:.7;}
+.cgcstyle .hopa-5:hover{opacity:1;}
+.cgcstyle .nohopa{opacity:1;}
+/*** Hover URL/Link Dark background***/
+.cgcstyle a.urdark:link,.cgcstyle a.urdark:visited {color: #777;}
+.cgcstyle a.urdark:hover,.cgcstyle a.urdark:active,.cgcstyle a.urdark:focus {color:#F36;}
+/*** Hover URL/Link Light background***/
+.cgcstyle a.urlight:link,.cgcstyle a.urlight:visited {color: #09C;}
+.cgcstyle a.urlight:hover,.cgcstyle a.urlight:active,.cgcstyle a.urlight:focus {color:#F60;}
+/*** Image Responsive ***/
+.cgcstyle img.responsive,.cgcstyle .responsive img{width:100%;height:auto;}
+/*** Font Size - Typography ***/
+.cgcstyle h1.heading-1,.cgcstyle .heading-1 h1{font-size: 2.5em;line-height:normal;}
+.cgcstyle h2.heading-2,.cgcstyle .heading-2 h2{font-size: 1.875em;line-height:normal;}
+.cgcstyle p.para,.cgcstyle .para p{font-size: 0.875em;line-height:normal;}
+/*** Scrollbar ***/
+.xcr::-webkit-scrollbar {width: 8px; height:8px;background-color:#69BDDB;}
+	/* Track */
+.xcr::-webkit-scrollbar-track {background: #fff;box-shadow:inset 0 0 3px rgba(0,0,0,0.3); }
+ /* Handle */
+.xcr::-webkit-scrollbar-thumb {background:#69BDDB;}
+/* Handle on hover */
+.xcr::-webkit-scrollbar-thumb:hover {background: #69C;box-shadow:inset 0 0 3px rgba(0,0,0,0.5); }
+
+.fxcr{scrollbar-color: #bbb #1f82ec;scrollbar-width: thin;overflow-y: scroll;}
+
+.cgcstyle .frow:before,
+.cgcstyle.frow:after{content: "";clear: both;display: inline-table;}
+	.cgcstyle .noskew,
+	.cgcstyle .notransform{transform:none;}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific css here */
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+}
+@media screen and (max-height: 450px) {
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+}
+@media only screen and (max-width: 748px) and (min-width: 200px){
+.cgcstyle [class*="gr-"]{width:100%;float:none;clear:both;}
+.cgcstyle [class*="lskew-"],.cgcstyle [class*="rskew-"]{transform: perspective(1100px) rotateY(1deg) scaleZ(.99) translateZ(10px) translateY(1%) translateX(1%);transform-style: preserve-3d;}
+.cgcstyle .noskew,
+.cgcstyle .notransform{transform:none;}
+  }
+ 
