@@ -1,5 +1,5 @@
 # Extended CSS - [CGC] Custom Gem Class
-
+<a href="https://raw.githubusercontent.com/DanNitro/cb/main/cb-extraclass.css"><img src="https://img.shields.io/badge/CGC-RAW css .v.0.1-green" alt="CSS CGC"/></a> <a href="https://dannitro.github.io/cb/examples/layout-examples-using-blocks.html"><img src="https://img.shields.io/badge/CGC-HTML%20demo-blue" alt="HTML CGC"/></a>
 
 ***CB Project***
 
