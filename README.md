@@ -60,8 +60,8 @@ Content will be added after update
 
 ### License
 The license(s) of respective entities apply
-* Graphics [Intellectual Property](https://pwchi.design-xpro.com/participant/pwchiman/)
-   * Concept [Intellectual Property](https://pwchi.design-xpro.com/participant/pwchiman/)  
+* Graphics [Intellectual Property](https://github.com/DanNitro)
+   * Concept [Intellectual Property](https://github.com/DanNitro)  
    
    
 ![hr](https://raw.githubusercontent.com/PwchiWorld/app/main/assets/img/hr.png)
