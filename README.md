@@ -13,6 +13,7 @@ A simple `css` file holding custom `class`
 
 **Index** 
 - [About](README.md#about)
+- [Updates](#updates)
 - [To Do](README.md#to-do)
 - [Issues](README.md#issues)
 - [Library](#library)
@@ -28,6 +29,17 @@ Content will be added after update
 
  * [Discussions](https://github.com/dannitro/cb/discussions)
  * [Issues](https://github.com/dannitro/cb/issues)
+
+
+![hr](https://raw.githubusercontent.com/PwchiWorld/app/main/assets/img/hr.png)
+
+### Updates
+
+- **v.0.1.a** - [css](https://github.com/DanNitro/cb/commit/ba2c04d01a259f3dea03f3b84d95bd01a459dd26) changed scrollbar visible on Firefox browser
+- **v.0.1** - initial release
+
+
+
 
 
 ![hr](https://raw.githubusercontent.com/PwchiWorld/app/main/assets/img/hr.png)
